@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity 1</title>
+</head>
+<body>
+    <h1>Activity 1 From U2</h1>
+    <input type="text" id="InputText">
+        <button id="ActionButton">click</button>
+    <script>
+        document.getElementById("ActionButton").addEventListener("click", function basic(){
+            var keyword = document.getElementById("InputText").value;
+            console.log(keyword);
+
+        (function(){
+            var a = 0;
+            var keyword2 = keyword.split("");
+            keyword2.map((i) => {
+                if(i ==="a"){
+                    a++;
+                };
+            });
+            console.log(a);
+            functionArticles(keyword2);
+            
+        })();
+        
+    });
+
+    functionArticles = keyword2 => {
+                    if(keyword2[0] === ("a" || "e" ||"i" || "o" || "u" ||"A" || "E" || "I" || "O" || "U")) {
+                        console.log("an");
+                    } else {
+                        console.log("a");
+                    }
+                }
+    </script>
+</body>
+</html>
