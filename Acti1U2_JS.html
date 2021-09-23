@@ -24,16 +24,19 @@
                 };
             });
             console.log(a);
+            //console.log(keyword2);
             functionArticles(keyword2);
             
         })();
         
     });
-
+    var A = "A"; var B = "B"; var E = "E"; var 
     functionArticles = keyword2 => {
-                    if(keyword2[0] === ("a" || "e" ||"i" || "o" || "u" ||"A" || "E" || "I" || "O" || "U")) {
+                    if(keyword2[0] == ( "A" || "E" || "I" || "O" || "U")) {
                         console.log("an");
-                    } else {
+                    } else if(keyword2[0] === ("a" || "e" || "i" || "o" || "u")){
+                        console.log("an");
+                    }else {
                         console.log("a");
                     }
                 }
