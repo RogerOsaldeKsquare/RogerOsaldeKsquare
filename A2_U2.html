@@ -62,6 +62,7 @@
             console.log(input7)
             if(input7=== 0){
                 console.log("You can´t divide /0")
+                alert("You can´t divide /0");
             }else{
             Rdiv = input6 / input7;
             console.log(Rdiv);
@@ -77,6 +78,7 @@
             }
             if (input8 < 0) {
                 console.log('Error! Factorial for negative number does not exist.');
+                alert("Error! Factorial for negative number does not exist.");
             }   
             // if number is 0
             else if (input8 === 0) {
@@ -84,6 +86,9 @@
             }else{
             console.log(input8)
             console.log(fact);
+            }
+            if(input8>50){
+            alert("WARNING: !The high values in the factorial can blow up your memory!");
             }
     })
     </script>
